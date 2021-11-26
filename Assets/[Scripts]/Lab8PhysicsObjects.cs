@@ -11,6 +11,7 @@ public class Lab8PhysicsObjects : MonoBehaviour
     void Start()
     {
         FindObjectOfType<Lab8PhysicsSystem>().lab8Physics.Add(this);
+        shape = GetComponent<PhysicsCollider>();
     }
 
     // Update is called once per frame

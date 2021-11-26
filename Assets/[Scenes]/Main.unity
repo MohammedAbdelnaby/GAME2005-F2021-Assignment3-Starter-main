@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ac44fe646b9a545b36b733514085f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   alignment: 2
 --- !u!114 &29444232
 MonoBehaviour:
@@ -173,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ac44fe646b9a545b36b733514085f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   alignment: 2
 --- !u!114 &30303714
 MonoBehaviour:
@@ -206,6 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &34267550
 MonoBehaviour:
@@ -239,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &43825768
 MonoBehaviour:
@@ -272,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &44639512
 MonoBehaviour:
@@ -352,6 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &186807686
 MonoBehaviour:
@@ -607,11 +613,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8613151216663006241, guid: 3b62badc93a1b4c448716cc7ed1b74cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2875051
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 8613151216663006241, guid: 3b62badc93a1b4c448716cc7ed1b74cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.62
+      value: 1.773
       objectReference: {fileID: 0}
     - target: {fileID: 8613151216663006241, guid: 3b62badc93a1b4c448716cc7ed1b74cd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -679,6 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!1001 &279794725
 PrefabInstance:
@@ -1012,6 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &359994391
 MonoBehaviour:
@@ -2239,6 +2247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!1 &963194225
 GameObject:
@@ -2546,6 +2555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ac44fe646b9a545b36b733514085f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   alignment: 2
 --- !u!114 &1215795634
 MonoBehaviour:
@@ -3056,6 +3066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!1 &1595751044 stripped
 GameObject:
@@ -3074,6 +3085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &1595751046
 MonoBehaviour:
@@ -3107,6 +3119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ac44fe646b9a545b36b733514085f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   alignment: 2
 --- !u!114 &1604178928
 MonoBehaviour:
@@ -3140,6 +3153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &1621668081
 MonoBehaviour:
@@ -3173,6 +3187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ac44fe646b9a545b36b733514085f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   alignment: 2
 --- !u!114 &1626699655
 MonoBehaviour:
@@ -3221,6 +3236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!1001 &1696624440
 PrefabInstance:
@@ -3296,6 +3312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &1696624443
 MonoBehaviour:
@@ -3329,6 +3346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &1729557937
 MonoBehaviour:
@@ -3362,6 +3380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &1815867850
 MonoBehaviour:
@@ -3395,6 +3414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &1859365834
 MonoBehaviour:
@@ -3500,6 +3520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!1001 &1882153217
 PrefabInstance:
@@ -3637,6 +3658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!1001 &1960478812
 PrefabInstance:
@@ -4002,6 +4024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!114 &2118726117
 MonoBehaviour:
@@ -4050,6 +4073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!1 &2143860482 stripped
 GameObject:
@@ -4083,6 +4107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4de364a8f2e94f8ea72d26ea9f24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KinematicsObject: {fileID: 0}
   raduis: 0.5
 --- !u!1001 &7889847281303390569
 PrefabInstance:

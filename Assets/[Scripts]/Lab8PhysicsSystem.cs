@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -113,23 +114,52 @@ public class Lab8PhysicsSystem : MonoBehaviour
         bool IsOverLapping = PenetrationDepth > 0;
         if (IsOverLapping)
         {
+
+
+
+
         }
         else
         {
             return;
         }
-
         float minimumDistance = 0.0001f;
         if (Distance < minimumDistance)
         {
             Distance = minimumDistance;
         }
         Vector3 CollisionNormalAToB = Displacement / Distance;
-        Vector3 MinimumTranslationVector1 = -PenetrationDepth * CollisionNormalAToB * 0.5f;
-        Vector3 MinimumTranslationVector2 = PenetrationDepth * CollisionNormalAToB * 0.5f;
+        Vector3 relative = sphere1.KinematicsObject.velocity - sphere2.KinematicsObject.velocity;
+        Vector3 norVec = (Vector3.Dot(relative, CollisionNormalAToB)) * CollisionNormalAToB;
+        //Vector3 MinimumTranslationVector1 = -PenetrationDepth * CollisionNormalAToB;
+        //Vector3 MinimumTranslationVector2 = PenetrationDepth * CollisionNormalAToB;
 
-        sphere1.transform.position += MinimumTranslationVector1;
-        sphere2.transform.position += MinimumTranslationVector2;
+        //sphere1.KinematicsObject.velocity += MinimumTranslationVector1;
+        //sphere2.KinematicsObject.velocity += MinimumTranslationVector2;
+        sphere1.KinematicsObject.velocity -= norVec / (sphere1.KinematicsObject.mass + sphere2.KinematicsObject.mass);
+        sphere2.KinematicsObject.velocity += norVec / (sphere1.KinematicsObject.mass + sphere1.KinematicsObject.mass);
+
+        //float minimumDistance = 0.0001f;
+        //if (Distance < minimumDistance)
+        //{
+        //    Distance = minimumDistance;
+        //}
+        //Vector3 CollisionNormalAToB = Displacement / Distance;
+        //Vector3 MinimumTranslationVector1 = -PenetrationDepth * CollisionNormalAToB;
+        //Vector3 MinimumTranslationVector2 = PenetrationDepth * CollisionNormalAToB;
+        //Vector3 tangent = new Vector3(-CollisionNormalAToB.y, CollisionNormalAToB.x, CollisionNormalAToB.z);
+        //float dptan1 = sphere1.KinematicsObject.velocity.x * tangent.x +
+        //               sphere1.KinematicsObject.velocity.y * tangent.y +
+        //               sphere1.KinematicsObject.velocity.z * tangent.z;
+        //float dptan2 = sphere2.KinematicsObject.velocity.x * tangent.x +
+        //               sphere2.KinematicsObject.velocity.y * tangent.y +
+        //               sphere2.KinematicsObject.velocity.z * tangent.z;
+
+        //sphere1.KinematicsObject.velocity = tangent * -dptan1;
+        //sphere1.KinematicsObject.velocity = tangent * dptan2;
+
+        ////sphere1.KinematicsObject.velocity += MinimumTranslationVector1;
+        ////sphere2.KinematicsObject.velocity += MinimumTranslationVector2;
     }
     static void SpherePlaneCollision(PhysicsColliderSphere sphere, PhysicsColliderPlane plane)
     {
@@ -143,7 +173,8 @@ public class Lab8PhysicsSystem : MonoBehaviour
         bool isOverLapping = penetrationdepth > 0;
         if (isOverLapping)
         {
-            sphere.KinematicsObject.velocity = Vector3.zero;
+            sphere.KinematicsObject.velocity -= ((2 *(Vector3.Dot(sphere.KinematicsObject.velocity, plane.getNormal()))) * plane.getNormal());
+            Debug.Log((2 * (Vector3.Dot(sphere.KinematicsObject.velocity, plane.getNormal()))));
         }
         else
         {
@@ -163,5 +194,27 @@ public class Lab8PhysicsSystem : MonoBehaviour
 
     }
 
+    static void Thing(PhysicsColliderSphere sphere1, PhysicsColliderSphere sphere2)
+    {
+
+        ////float angle = -(Mathf.Cos(Vector3.Angle(sphere1.transform.position, sphere2.transform.position)));
+        //sphere1.KinematicsObject.velocity.x =
+        //    (sphere1.KinematicsObject.velocity.x * (sphere1.KinematicsObject.mass - sphere2.KinematicsObject.mass) +
+        //     (2 * sphere2.KinematicsObject.mass * sphere2.KinematicsObject.velocity.x)) /
+        //    (sphere1.KinematicsObject.mass + sphere2.KinematicsObject.mass);
+
+        //sphere1.KinematicsObject.velocity.y =
+        //    (sphere1.KinematicsObject.velocity.y * (sphere1.KinematicsObject.mass - sphere2.KinematicsObject.mass) +
+        //     (2 * sphere2.KinematicsObject.mass * sphere2.KinematicsObject.velocity.y)) /
+        //    (sphere1.KinematicsObject.mass + sphere2.KinematicsObject.mass);
+
+        //sphere1.KinematicsObject.velocity.z =
+        //    (sphere1.KinematicsObject.velocity.z * (sphere1.KinematicsObject.mass - sphere2.KinematicsObject.mass) +
+        //     (2 * sphere2.KinematicsObject.mass * sphere2.KinematicsObject.velocity.z)) /
+        //    (sphere1.KinematicsObject.mass + sphere2.KinematicsObject.mass);
+
+
+
+    }
 
 }
